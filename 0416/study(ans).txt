@@ -1,0 +1,86 @@
+//답안
+1~2.
+
+const p = document.querySelector('p');
+const img = document.querySelector('img');
+
+const pId = p.getAttribute('id');
+
+console.log(pId); // 'myTxt'
+
+img.setAttribute('src', "도그.jpg"); //사진이 뽀로로에서 도그로 바뀝니다
+
+
+3.
+const img = document.querySelector('img')
+console.log(img.dataset.weapons) // "laser"
+
+4.
+https://codepen.io/SuuJ/pen/yLRNZjZ?editors=1111
+
+5,6번은 코드펜에서 실행시키면 답이뜹니다.
+
+7.
+<ul>
+     <li>
+          <figure>
+               <img src="" alt="고양이">
+               <figcaption>
+                    상품 가격 : 39,990원 <span class="hidden">(주의) VIP만 받을수있는 혜택입니다.</span>
+               </figcaption>
+           </figure>
+       </li>
+    </ul>
+
+
+<script>
+
+const info = document.querySelector('figcaption');
+
+        console.log(info.textContent); 
+// 상품 가격 : 39,990원 (주의) VIP만 받을수있는 혜택입니다.
+// 숨겨진 text라도 다 가져옵니다.<span>이런건 안나오죠.
+
+        console.log(info.innerText); 
+// 상품 가격 : 39,990원
+// 렌더링 되어서 나오므로 숨겨진 텍스트는 안나옵니다.
+
+        console.log(info.innerHTML) 
+// 상품 가격 : 39,990원 <span class="hidden">(주의) VIP만 받을수있는 혜택입니다.</span>
+// 태그를 포함해 다나옵니다.
+</script>
+
+
+
+
+8.
+https://codepen.io/SuuJ/pen/QWZNqag?editors=1011
+
+
+
+9.
+
+<script>
+
+const itemsToDelete = document.querySelectorAll('.item-second');
+console.log(itemsToDelete)
+// item-second을 가진 모든 요소를 가져옵시다 - 유산슬, 김치찌개
+
+itemsToDelete.forEach(function(item) {
+    item.remove();
+});
+//요소를 하나하나 순회하면서 다 지운다.
+//유산슬과 김치찌개가 사라집니다.
+
+</script>
+
+
+10.
+
+<script>
+	const 짝수번째 = document.querySelectorAll('p:nth-of-type(2n)')
+	
+	짝수번째.forEach(item => {
+	  item.style.color = 'blue'
+	})
+</script>

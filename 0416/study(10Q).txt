@@ -1,0 +1,140 @@
+1~2.총 두문제가 있어용 !  Attribute 메소드 - 속성 접근 및 수정
+
+// 힌트 getAttribute, setAttribute을 이용합니다
+
+<p id='myTxt'>hello lions</p>
+<img src='뽀로로 사진.png'>
+
+1. 위 img 태그의 src를 '도그.png'로 바꿔보세요!
+2. p의 id인 'myTxt'를 가져오고 싶습니다
+
+
+<srcipt>
+//풀이
+
+
+
+
+</script>
+
+
+
+
+
+3. 
+data에 관한 문제입니다!
+<img
+  class="terran battle-cruiser"
+  src="battle-cruiser.png"
+  data-ship-id="324"
+  data-weapons="laser"
+  data-health="400"
+  data-mana="250"
+  data-skill="yamato-cannon"
+/>
+
+"laser"값을 가져오려면 어떤 코드를 짜야할까요?
+
+
+
+
+
+4.
+코드펜 링크에 들어가서 JS 짜면 됩니다
+https://codepen.io/SuuJ/pen/qBJZXJo?editors=1011
+
+
+
+
+5. 이벤트 버블링에 관한 문제입니다
+https://codepen.io/SuuJ/pen/LYgNyGX?editors=1011
+HTML 과 JS 코드를 잘보고
+- 버튼3클릭시 console에 뭐라고 찍힐까요?
+- 버튼1 클릭시 console에 뭐라구 찍힐까요?
+
+6. DOM안에서 Node 탐색하기
+코드펜에 가서 Js칸에 콘솔로그에 뭐가찍힐까요에 답하시면됩니다
+https://codepen.io/SuuJ/pen/qBJZmbJ?editors=1011
+
+
+
+
+7. innerHTML / textContent / innerText
+어떤게 콘솔로그될까요? 3문제
+<ul>
+     <li>
+          <figure>
+               <img src="" alt="고양이">
+               <figcaption>
+                    상품 가격 : 39,990원 <span class="hidden">(주의) VIP만 받을수있는 혜택입니다.</span>
+               </figcaption>
+           </figure>
+       </li>
+    </ul>
+
+
+
+<script>
+
+ const info = document.querySelector('figcaption');
+
+        console.log(info.textContent); 
+			//어떤게 콘솔로그될까요?
+
+        console.log(info.innerText); 
+		//어떤게 콘솔로그될까요?
+
+        console.log(info.innerHTML) 
+		//어떤게 콘솔로그될까요?
+
+</script>
+
+
+
+8. 
+https://codepen.io/SuuJ/pen/zYmqEPJ
+Make me MORE! 버튼을 누르면 밑에 사진처럼 li가 다섯개 생기게 JS를 짜보세요
+
+
+
+9.
+<article id="container">
+        <ul>
+            <li>탕수육</li>
+            <li class="item-second">유산슬</li>
+            <li>짜장면</li>
+        </ul>
+    </article>
+
+    <article>
+        <ul>
+            <li>된장국</li>
+            <li class="item-second">김치찌개</li>
+            <li>해장국</li>
+        </ul>
+    </article>
+
+클래스로 item-second 를 가진 유산슬과 김치찌개를 지우고싶으면 어떤 코드를 짜야할까요?
+힌트1. forEach 사용
+힌트2. .remove()사용
+
+<script>
+
+</script>
+
+
+
+
+
+10.
+<p>안녕하세여</p>
+<p>저는</p>
+<p>멋사입니다</p>
+<p>잘부탁드립니다</p>
+
+짝수번째 p의 color는 'blue'가 되게 코드를 짜주세요.
+forEach를 사용해도됩니다!
+
+<script>
+
+</script> 
